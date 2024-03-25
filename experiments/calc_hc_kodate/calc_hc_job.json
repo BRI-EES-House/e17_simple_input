@@ -1,0 +1,51 @@
+{
+  "name": "projects/<your-project>/locations/<location>/jobs/<job-name>",
+  "taskGroups": [
+    {
+      "taskCount": "180",
+      "parallelism": "36",
+      "taskSpec": {
+        "computeResource": {
+          "cpuMilli": "2000",
+          "memoryMib": "2048"
+        },
+        "runnables": [
+          {
+            "container": {
+              "imageUri": "<your-container-image-url>",
+              "volumes": [
+                "/mnt/disks/my-bucket:/mnt/disks/my-bucket:rw"
+              ]
+            },
+            "environment": {
+              "variables": {
+                "MOUNT_PATH": "/mnt/disks/my-bucket"
+              }
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "gcs": {
+              "remotePath": "<your-gcs-bucket>"
+            },
+            "mountPath": "/mnt/disks/my-bucket"
+          }
+        ]
+      }
+    }
+  ],
+  "allocationPolicy": {
+    "instances": [
+      {
+        "policy": {
+          "provisioningModel": "SPOT",
+          "machineType": "e2-medium"
+        }
+      }
+    ]
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}

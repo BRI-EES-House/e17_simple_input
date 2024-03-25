@@ -1,0 +1,1026 @@
+{
+    "common": {
+        "ac_method": "air_temperature"
+    },
+    "building": {
+        "infiltration": {
+            "method": "balance_residential",
+            "c_value_estimate": "specify",
+            "story": 1,
+            "c_value": 2.0,
+            "inside_pressure": "negative"
+        }
+    },
+    "rooms": [
+        {
+            "id": 0,
+            "name": "main_occupant_room",
+            "sub_name": "",
+            "floor_area": 24.7479,
+            "volume": 59.39496,
+            "ventilation": {
+                "natural": 296.9748
+            },
+            "furniture": {
+                "input_method": "default"
+            },
+            "schedule": {
+                "name": "main_occupant_room"
+            }
+        },
+        {
+            "id": 1,
+            "name": "other_occupant_room",
+            "sub_name": "",
+            "floor_area": 29.7506,
+            "volume": 71.40144,
+            "ventilation": {
+                "natural": 357.0072
+            },
+            "furniture": {
+                "input_method": "default"
+            },
+            "schedule": {
+                "name": "other_occupant_room"
+            }
+        },
+        {
+            "id": 2,
+            "name": "not_occupant_room",
+            "sub_name": "",
+            "floor_area": 15.4975,
+            "volume": 37.19399999999999,
+            "ventilation": {
+                "natural": 185.9699999999999
+            },
+            "furniture": {
+                "input_method": "default"
+            },
+            "schedule": {
+                "name": "non_occupant_room"
+            }
+        }
+    ],
+    "boundaries": [
+        {
+            "id": 0,
+            "name": "south_external_wall_main",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "external_general_part",
+            "area": 14.4792251537854,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "s",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 1,
+            "name": "south_external_wall_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 8.793099101447453,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "s",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 2,
+            "name": "east_part_wall_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 38.65120342727015,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete200",
+                    "thermal_resistance": 0.1253,
+                    "thermal_capacity": 400.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "e",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 3,
+            "name": "east_part_wall_not",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_general_part",
+            "area": 16.70295107636786,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete200",
+                    "thermal_resistance": 0.1253,
+                    "thermal_capacity": 400.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "e",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 4,
+            "name": "north_external_wall_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 18.97434741438535,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "n",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 5,
+            "name": "north_external_wall_not",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_general_part",
+            "area": 7.135627585051557,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "n",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 6,
+            "name": "west_part_wall_main",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "external_general_part",
+            "area": 33.12043038797295,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete200",
+                    "thermal_resistance": 0.1253,
+                    "thermal_capacity": 400.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 7,
+            "name": "west_external_wall_main",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "external_general_part",
+            "area": 6.486702469066401e-16,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 8,
+            "name": "west_part_wall_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 18.00977797491143,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete200",
+                    "thermal_resistance": 0.1253,
+                    "thermal_capacity": 400.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 9,
+            "name": "west_external_wall_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 3.527251001533426e-16,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 10,
+            "name": "west_part_wall_not",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_general_part",
+            "area": 4.917514788943084,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete200",
+                    "thermal_resistance": 0.1253,
+                    "thermal_capacity": 400.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 11,
+            "name": "west_external_wall_not",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_general_part",
+            "area": 9.631050970488283e-17,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "insulation",
+                    "thermal_resistance": 1.842514403186516,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "concrete135",
+                    "thermal_resistance": 0.084,
+                    "thermal_capacity": 270.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "w",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 12,
+            "name": "parting_ceiling_main_occupant",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "external_general_part",
+            "area": 24.7479,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete150",
+                    "thermal_resistance": 0.094,
+                    "thermal_capacity": 300.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "top",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.09,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 13,
+            "name": "parting_ceiling_other_occupant",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_general_part",
+            "area": 29.7506,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete150",
+                    "thermal_resistance": 0.094,
+                    "thermal_capacity": 300.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "top",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.09,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 14,
+            "name": "parting_ceiling_not_occupnat",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_general_part",
+            "area": 15.4975,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "concrete150",
+                    "thermal_resistance": 0.094,
+                    "thermal_capacity": 300.0
+                }
+            ],
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": false,
+            "direction": "top",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.09,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 0.0
+        },
+        {
+            "id": 15,
+            "name": "north_door_room8",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "external_opaque_part",
+            "area": 1.495959555034194,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "n",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "u_value": 6.285055404728916,
+            "inside_heat_transfer_resistance": 0.11,
+            "outside_solar_absorption": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 16,
+            "name": "south_window_main",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "external_transparent_part",
+            "area": 3.84189612997418,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "s",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "u_value": 2.570110809457831,
+            "inside_heat_transfer_resistance": 0.11,
+            "eta_value": 0.5825917128545991,
+            "incident_angle_characteristics": "single",
+            "glass_area_ratio": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 17,
+            "name": "south_window_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_transparent_part",
+            "area": 2.753925544494766,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "s",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "u_value": 2.570110809457831,
+            "inside_heat_transfer_resistance": 0.11,
+            "eta_value": 0.5825917128545991,
+            "incident_angle_characteristics": "single",
+            "glass_area_ratio": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 18,
+            "name": "north_window_other",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "external_transparent_part",
+            "area": 2.150441860361653,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "solar_shading_part": {
+                "existence": false
+            },
+            "is_sun_striked_outside": true,
+            "direction": "n",
+            "outside_emissivity": 0.9,
+            "outside_heat_transfer_resistance": 0.04,
+            "u_value": 2.570110809457831,
+            "inside_heat_transfer_resistance": 0.11,
+            "eta_value": 0.5825917128545991,
+            "incident_angle_characteristics": "single",
+            "glass_area_ratio": 0.8,
+            "temp_dif_coef": 1.0
+        },
+        {
+            "id": 19,
+            "name": "internal_main_other",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "internal",
+            "area": 23.01843361402035,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 20
+        },
+        {
+            "id": 20,
+            "name": "internal_other_main",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "internal",
+            "area": 23.01843361402035,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 19
+        },
+        {
+            "id": 21,
+            "name": "internal_main_not",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "internal",
+            "area": 32.01693197101724,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 22
+        },
+        {
+            "id": 22,
+            "name": "internal_main_not",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "internal",
+            "area": 32.01693197101724,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 21
+        },
+        {
+            "id": 23,
+            "name": "internal_other_not",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "internal",
+            "area": 75.12999698787402,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 24
+        },
+        {
+            "id": 24,
+            "name": "internal_not_other",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "internal",
+            "area": 75.12999698787402,
+            "h_c": 2.5,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 23
+        },
+        {
+            "id": 25,
+            "name": "dummy_floor_main_other",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 0.7,
+            "is_solar_absorbed_inside": true,
+            "is_floor": true,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 26
+        },
+        {
+            "id": 26,
+            "name": "dummy_floor_other_main",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 25
+        },
+        {
+            "id": 27,
+            "name": "dummy_floor_other_not",
+            "sub_name": "",
+            "connected_room_id": 1,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 0.7,
+            "is_solar_absorbed_inside": true,
+            "is_floor": true,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 28
+        },
+        {
+            "id": 28,
+            "name": "dummy_floor_not_other",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 27
+        },
+        {
+            "id": 29,
+            "name": "dummy_floor_not_main",
+            "sub_name": "",
+            "connected_room_id": 2,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 0.7,
+            "is_solar_absorbed_inside": true,
+            "is_floor": true,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 30
+        },
+        {
+            "id": 30,
+            "name": "dummy_floor_main_not",
+            "sub_name": "",
+            "connected_room_id": 0,
+            "boundary_type": "internal",
+            "area": 0.01,
+            "h_c": 5.0,
+            "is_solar_absorbed_inside": false,
+            "is_floor": false,
+            "layers": [
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "non-hermetic_air_layer",
+                    "thermal_resistance": 0.09,
+                    "thermal_capacity": 0.0
+                },
+                {
+                    "name": "plaster_board",
+                    "thermal_resistance": 0.0568,
+                    "thermal_capacity": 0.0
+                }
+            ],
+            "rear_surface_boundary_id": 29
+        }
+    ],
+    "mechanical_ventilations": [
+        {
+            "id": 0,
+            "root_type": "type3",
+            "volume": 38.14242245346202,
+            "root": [
+                0,
+                2
+            ]
+        },
+        {
+            "id": 1,
+            "root_type": "type3",
+            "volume": 45.85277754653797,
+            "root": [
+                1,
+                2
+            ]
+        }
+    ],
+    "equipments": {
+        "heating_equipments": [
+            {
+                "id": 0,
+                "name": "heating_equipment no.0",
+                "equipment_type": "rac",
+                "property": {
+                    "space_id": 0,
+                    "q_min": 500,
+                    "q_max": 8796.350581307592,
+                    "v_min": 11.050219111467696,
+                    "v_max": 20.09130747539581,
+                    "bf": 0.2
+                }
+            },
+            {
+                "id": 1,
+                "name": "heating_equipment no.1",
+                "equipment_type": "rac",
+                "property": {
+                    "space_id": 1,
+                    "q_min": 500,
+                    "q_max": 10215.444356711901,
+                    "v_min": 11.774559878335822,
+                    "v_max": 21.408290687883312,
+                    "bf": 0.2
+                }
+            }
+        ],
+        "cooling_equipments": [
+            {
+                "id": 0,
+                "name": "cooling_equipment no.0",
+                "equipment_type": "rac",
+                "property": {
+                    "space_id": 0,
+                    "q_min": 500,
+                    "q_max": 5233.87542269,
+                    "v_min": 10.40645210204478,
+                    "v_max": 18.92082200371778,
+                    "bf": 0.2
+                }
+            },
+            {
+                "id": 1,
+                "name": "cooling_equipment no.1",
+                "equipment_type": "rac",
+                "property": {
+                    "space_id": 1,
+                    "q_min": 500,
+                    "q_max": 6040.3161656600005,
+                    "v_min": 11.079081778225579,
+                    "v_max": 20.14378505131923,
+                    "bf": 0.2
+                }
+            }
+        ]
+    }
+}
